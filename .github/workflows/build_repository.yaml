@@ -21,6 +21,8 @@ jobs:
       with:
         packages: >
           php82
+          php82-curl
+          php82-mysql
 
     - name: List generated Files
       run: ls -1 > ${{ github.workspace }}/files.txt
